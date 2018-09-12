@@ -5,6 +5,8 @@ import datetime
 from parse2data.parse_rosters import ParsingRosters
 import mysql.connector
 
+"""This script collect all the data from tha parser in a mysql database"""
+
 class players2data():
 
     def teams(self):
