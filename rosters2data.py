@@ -15,7 +15,7 @@ class players2data():
          
     def database(self):
         a = ParsingRosters()
-        cnx = mysql.connector.connect(user='giorgos',password='resalto',host='localhost',database='NbaTeams')
+        cnx = mysql.connector.connect(user='user',password='password',host='localhost',database='NbaTeams')
 	cursor = cnx.cursor()
 	for team in self.teams():
             name,number,salary,college,age,position = a.parsingRosterData(team.lower())
